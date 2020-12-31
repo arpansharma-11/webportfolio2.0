@@ -1,0 +1,162 @@
+@import 'utilities.css';
+
+:root{
+    --primary:#3DCFD3;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#898989;
+    --light:#F2F2F2;
+    --secondary:#070606;
+}
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    -webkit-font-smotthinng:antialiased;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: smaller;  
+}
+
+header{
+    background: var(--dark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 90%, 0 100%);
+}
+.container{
+    max-width:1152px;
+    padding:0 15px;
+    margin:0 auto;
+}
+
+.btn{
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border:2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    transition: all .3s ease;
+    font-size: 15px;
+}
+
+.btn-primary{
+    background: var(--primary);
+    color:var(--secondary);
+}
+.btn-secondary{
+    background: transparent;
+    border:2px solid ;
+    color: var(--primary);
+}
+
+.btn-secondary:hover{
+    background: var(--primary);
+    border-color: transparent;
+    color: var(--secondary);
+}
+
+.btn-primary:hover{
+    background:transparent;
+    border-color:var(--primary);
+    color:var(--primary);
+
+}
+
+.navbar-toggler-icon{
+    color: var(--primary);
+}
+
+.nav-link {
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 1rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+
+.nav-link:hover{
+    color: var(--primary);
+}
+.navbar-transparent .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;..");
+  }
+
+  .navbar-brand{
+      color: var(--primary);
+  }
+
+  .navbar{
+      padding: 1rem 0; 
+      margin: 0;
+
+  }
+
+
+  .hero .left img{
+    width: 400px;
+    box-shadow: var(--pure);
+    position: relative;
+}
+.hero .right{
+    color: var(--pure);
+}
+
+.hero .right h6{
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.hero .right h1{
+    font-size:3rem;
+    font-weight:100;
+    line-height: 1;
+    margin-bottom: 2rem;
+
+}
+
+.hero .right h1 span{
+    color: var(--primary);
+}
+
+.hero .right p{
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+.hero{
+    padding: 3rem  0;
+}
+.hero .right {
+    margin-top:-7rem;
+}
+
+.hero .left{
+    margin-left: 6rem;
+}
+ 
+@media (max-width: 1024px) {
+    .card{ grid-template-columns: repeat(1, 1fr); }
+
+
+    .hero .left img{
+        padding-top: -10rem;
+        width: 300px;
+    }
+
+    .hero .right h1{
+        font-size: 3rem;
+    }
+
+    .hero{
+        padding-top: 5rem;
+    }
+
+    header{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 27% 95%, 0 100%);
+    }
+   
+    
+  }

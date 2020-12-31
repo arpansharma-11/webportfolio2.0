@@ -1,0 +1,25 @@
+.flex{
+    display: flex;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+.flex-1{
+    flex:1;
+    flex-wrap: wrap;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+@media (max-width: 800px) {
+    .flex-item-right, .flex-item-left {
+      flex: 100%;
+    }
+  }
